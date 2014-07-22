@@ -4,33 +4,39 @@ This is a simple implementation of the faker gem in rails. Faker helps create re
 
 For more information on Faker, please visit <https://github.com/stympy/faker>
 
+Eventhough the implementation is quite simple, however having a sample app as a guide helps Rails beginners.
+
 
 Start
 ----------
-Clone the project or download it to your computer. Install the gem in your Gemfile
-
-- ```gem 'faker'```
-
-I used ``gem 'faker', '~> 1.4.2'`` for the latest version, go to <https://rubygems.org/gems/faker>
-
-- then ```bundle``` it from your terminal
-
-##Usage
------
-
-I've already created a posts migration with with title(string), body(text) and timestamps.
-
-- ```rake db:migrate``` it from your terminal
-
-- ```rake db:populate``` it from your terminal
+-	Clone the project or download it to your computer. 
+-	cd into the folder from your terminal
+-	run ```rake db:migrate```
+-	run ```rake db:populate```
+-	start the server ```rails s```
 
 That's it. 15 random posts will be created eveytime you run the 'rake db:populate' command. You may need to restart the server to see the changes. 
+
+
 
 ##So how was the seed data populated?
 -----
 
-With the Faker gem install in the Gemfile, we create a file (populate.rake) in the following folder
+I created a basic posts migration with with title(string), body(text) and timestamps. 
 
+- ```rake db:migrate``
+
+Created a simple model, controller (with only index action), view file and set the root path to 'posts#index'.
+
+Then we install the gem 
+
+- ```gem 'faker'``` in our Gemfile
+
+I used ``gem 'faker', '~> 1.4.2'`` for the latest version, go to <https://rubygems.org/gems/faker>
+
+- then ```bundle```
+
+With the Faker gem install in the Gemfile, we create a file (populate.rake) in the following folder
 - lib/tasks/populate.rake
  
 ```
@@ -51,6 +57,14 @@ namespace :db do
   end
 end
 ```
+- ```rake db:populate```
+
+- ```rails s```
+
+Go to http://localhost:3000/
+
+
+That's it. 15 random posts will be created eveytime you run the 'rake db:populate' command. You may need to restart the server to see the changes. 
 
 The options for the data type you need are given below. Again, they are from <https://github.com/stympy/faker>
 
