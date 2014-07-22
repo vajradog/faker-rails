@@ -410,14 +410,6 @@ allowing you to get different formats by switching locales.  Just set
 Faker::Config.locale to the locale you want, and Faker will take care of the
 rest.
 
-Contributing
-------------
-See [CONTRIBUTING.md](https://github.com/stympy/faker/blob/master/CONTRIBUTING.md).
-
-Contact
--------
-Comments and feedback are welcome. Send an email to Benjamin Curtis via the [google group](http://groups.google.com/group/ruby-faker).
-
 License
 -------
 This code is free to use under the terms of the MIT license.
