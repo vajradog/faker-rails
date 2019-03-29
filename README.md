@@ -19,7 +19,7 @@ That's it. 15 random posts will be created eveytime you run the 'rake db:populat
 
 
 
-##So how was the seed data populated?
+## So how was the seed data populated?
 -----
 
 I created a basic posts migration with with title(string), body(text) and timestamps. 
@@ -70,7 +70,7 @@ The options for the data type you need are given below. Again, they are from <ht
 
 Do note that *Faker::Lorem.sentences* instead of *Faker::Lorem.sentence* will throw a TypeError because the *sentences* outputs an array and our post.title is a string.
 
-###Faker::Options
+### Faker::Options
 
 
 
@@ -81,9 +81,9 @@ Faker::Name.name      #=> "Christophe Bartell"
 Faker::Internet.email #=> "kirsten.greenholt@corkeryfisher.info"
 
 ```
-```
 
-###Faker::Address
+### Faker::Address
+```
 -----------------
 
 ```ruby
@@ -124,7 +124,7 @@ Faker::Address.longitude #=> "-156.65548382095133"
 
 ```
 
-###Faker::Bitcoin
+### Faker::Bitcoin
 -----------------
 
 ```
@@ -134,7 +134,7 @@ Faker::Bitcoin.address #=> "1HUoGjmgChmnxxYhz87YytV4gVjfPaExmh"
 
 ```
 
-###Faker::Business
+### Faker::Business
 ------------------
 
 ```
@@ -148,7 +148,7 @@ Faker::Business.credit_card_type #=> "visa"
 
 ```
 
-###Faker::Code
+### Faker::Code
 --------------
 
 ```
@@ -160,7 +160,7 @@ Faker::Code.ean #=> "4600051000057"
 
 ```
 
-###Faker::Commerce
+### Faker::Commerce
 ------------------
 
 ```
@@ -179,7 +179,7 @@ Faker::Commerce.price #=> "44.6"
 
 ```
 
-###Faker::Company
+### Faker::Company
 -----------------
 
 ```
@@ -203,7 +203,7 @@ Faker::Company.logo #=> "http://www.biz-logo.com/examples/007.gif"
 ```
 
 
-###Faker::Internet
+### Faker::Internet
 ---------------
 
 ```
@@ -266,7 +266,7 @@ Faker::Internet.slug('foo bar', '-') #=> "foo-bar"
 
 ```
 
-###Faker::Lorem
+### Faker::Lorem
 ---------------
 
 ```
@@ -309,7 +309,7 @@ Faker::Lorem.paragraphs(1, true) #=> ""
 
 ```
 
-###Faker::Name
+### Faker::Name
 --------------
 
 ```
@@ -329,7 +329,7 @@ Faker::Name.title #=> "Legacy Creative Director"
 
 ```
 
-###Faker::Number
+### Faker::Number
 ----------------
 
 ```
@@ -342,7 +342,7 @@ Faker::Number.digit #=> "1"
 
 ```
 
-###Faker::PhoneNumber
+### Faker::PhoneNumber
 ---------------------
 
 Phone numbers may be in any of the following formats:
@@ -385,7 +385,7 @@ Faker::PhoneNumber.extension #=> "3764"
 
 ```
 
-###Faker::Hacker
+### Faker::Hacker
 ---------------------
 Are you having trouble writing tech-savvy dialogue for your latest screenplay?
 Worry not! Hollywood-grade technical talk is ready to fill out any form where you need to look smart.
